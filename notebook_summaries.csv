@@ -1,0 +1,975 @@
+Title,Summary
+exercise-a-single-neuron,"**This notebook is an exercise in the [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/ryanholbrook/a-single-neuron).**
+
+---
+ # Introduction #
+
+In the tutorial we learned about the building blocks of neural networks: *linear units*. We saw that a model of just one linear unit will fit a linear function to a dataset (equivalent to linear regression). In this exercise, you'll build a linear m...
+
+Code Snippet:
+# Setup plotting
+import matplotlib.pyplot as plt
+
+plt.style.use('seaborn-whitegrid')
+# Set Matplotlib defaults
+plt.rc('figure', autolayout=True)
+plt.rc('axes', labelweight='bold', labelsize='large',
+       titleweight='bold', titlesize=18, titlepad=10)
+
+# Setup feedback system
+from learntools.core i"
+exercise-arithmetic-and-variables,"**This notebook is an exercise in the [Intro to Programming](https://www.kaggle.com/learn/intro-to-programming) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/arithmetic-and-variables).**
+
+---
+ This exercise will get you started with running your own code.  
+
+# Set up the notebook
+
+To begin, run the code in the next cell.
+- Begin by clicking inside the code cell.  
+- Click on the triangle (in the shape of a ""Play button"") that appears to the left of the...
+
+Code Snippet:
+# Set up the exercise
+from learntools.core import binder
+binder.bind(globals())
+from learntools.intro_to_programming.ex1 import *
+print('Setup complete.') print(""Hello, world!"")
+
+# DO NOT REMOVE: Mark this question as completed
+q1.check() # TODO: Change the message
+print(""Your message here!"")
+
+# DO "
+exercise-bar-charts-and-heatmaps,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/bar-charts-and-heatmaps).**
+
+---
+ In this exercise, you will use your new knowledge to propose a solution to a real-world scenario.  To succeed, you will need to import data into Python, answer questions using the data, and generate **bar charts** and **heatmaps** to understand patterns in the data.
+
+...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+print(""Setup Complete"") # Set up code checking
+import os
+if not os.path.exists(""../input/ign_scores.csv""):
+    os.symlink(""../input/data-for-datavis/ign_scores.cs"
+exercise-binary-classification,"**This notebook is an exercise in the [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/ryanholbrook/binary-classification).**
+
+---
+ # Introduction #
+
+In this exercise, you'll build a model to predict hotel cancellations with a binary classifier. First, load the *Hotel Cancellations* dataset. # 1) Define Model #
+
+The model we'll use this time will have both batch normalization and dropout la...
+
+Code Snippet:
+# Setup plotting
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-whitegrid')
+# Set Matplotlib defaults
+plt.rc('figure', autolayout=True)
+plt.rc('axes', labelweight='bold', labelsize='large',
+       titleweight='bold', titlesize=18, titlepad=10)
+plt.rc('animation', html='html5')
+
+# Setup feedb"
+exercise-booleans-and-conditionals,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/booleans-and-conditionals).**
+
+---
+ In this exercise, you'll put to work what you have learned about booleans and conditionals.
+
+To get started, **run the setup code below** before writing your own code (and if you leave this notebook and come back later, don't forget to run the setup code again). # 1.
+
+Many programming lang...
+
+Code Snippet:
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex3 import *
+print('Setup complete.') # Your code goes here. Define a function called 'sign'
+
+# Check your answer
+q1.check() #q1.solution() def to_smash(total_candies):
+    """"""Return the number of leftover candies that"
+exercise-build-your-first-machine-learning-model,"## Recap
+So far, you have loaded your data and reviewed it with the following code. Run this cell to set up your coding environment where the previous step left off. # Exercises
+
+## Step 1: Specify Prediction Target
+Select the target variable, which corresponds to the sales price. Save this to a new variable called `y`. You'll need to print a list of the columns to find the name of the column you need.
+ ## Step 2: Create X
+Now you will create a DataFrame called `X` holding the predictive feature...
+
+Code Snippet:
+# Code you have previously used to load data
+import pandas as pd
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+
+home_data = pd.read_csv(iowa_file_path)
+
+# Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.machin"
+exercise-categorical-variables,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/categorical-variables).**
+
+---
+ By encoding **categorical variables**, you'll obtain your best results thus far!
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. In this exercise, you will work with data from...
+
+Code Snippet:
+# Set up code checking
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlink(""../input/home-data-for-ml-course/test.csv"", ""../input/test.csv"") 
+from learntools.core import binder
+binder.bind(globals("
+exercise-choosing-plot-types-and-custom-styles,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/choosing-plot-types-and-custom-styles).**
+
+---
+ In this exercise, you'll explore different chart styles, to see which color combinations and fonts you like best!
+
+## Setup
+
+Run the next cell to import and configure the Python libraries that you need to complete the exercise. The questions below will g...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+print(""Setup Complete"") # Set up code checking
+import os
+if not os.path.exists(""../input/spotify.csv""):
+    os.symlink(""../input/data-for-datavis/spotify.csv"", ""."
+exercise-conditions-and-conditional-statements,"**This notebook is an exercise in the [Intro to Programming](https://www.kaggle.com/learn/intro-to-programming) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/conditions-and-conditional-statements).**
+
+---
+ In the tutorial, you learned about conditions and conditional statements. In this exercise, you will use what you learned to answer several questions.
+
+# Set up the notebook
+
+Run the next code cell without changes to set up the notebook. # Question 1...
+
+Code Snippet:
+from learntools.core import binder
+binder.bind(globals())
+from learntools.intro_to_programming.ex4 import *
+print('Setup complete.') # TODO: Edit the function to return the correct grade for different scores
+def get_grade(score):
+    grade = ""A""
+    return grade
+    
+# Check your answer
+q1.check() #"
+exercise-creating-reading-and-writing,"**This notebook is an exercise in the [Pandas](https://www.kaggle.com/learn/pandas) course.  You can reference the tutorial at [this link](https://www.kaggle.com/residentmario/creating-reading-and-writing).**
+
+---
+ # Introduction
+
+The first step in most data analytics projects is reading the data file. In this exercise, you'll create Series and DataFrame objects, both by hand and by reading data files.
+
+Run the code cell below to load libraries you will need (including code to check your answers...
+
+Code Snippet:
+import pandas as pd
+pd.set_option('display.max_rows', 5)
+from learntools.core import binder; binder.bind(globals())
+from learntools.pandas.creating_reading_and_writing import *
+print(""Setup complete."") # Your code goes here. Create a dataframe matching the above diagram and assign it to the variable"
+exercise-cross-validation,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/cross-validation).**
+
+---
+ In this exercise, you will leverage what you've learned to tune a machine learning model with **cross-validation**.
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. You will work wi...
+
+Code Snippet:
+# Set up code checking
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlink(""../input/home-data-for-ml-course/test.csv"", ""../input/test.csv"") 
+from learntools.core import binder
+binder.bind(globals("
+exercise-data-leakage,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/data-leakage).**
+
+---
+ Most people find target leakage very tricky until they've thought about it for a long time.
+
+So, before trying to think about leakage in the housing price example, we'll go through a few examples in other applications. Things will feel more familiar once yo...
+
+Code Snippet:
+# Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.ml_intermediate.ex7 import *
+print(""Setup Complete"") # Check your answer (Run this code cell to receive credit!)
+q_1.check() # Check your answer (Run this code cell to receive credit!)
+q_2.check() # Chec"
+exercise-data-types-and-missing-values,"**This notebook is an exercise in the [Pandas](https://www.kaggle.com/learn/pandas) course.  You can reference the tutorial at [this link](https://www.kaggle.com/residentmario/data-types-and-missing-values).**
+
+---
+ # Introduction
+
+Run the following cell to load your data and some utility functions. # Exercises ## 1. 
+What is the data type of the `points` column in the dataset? ## 2. 
+Create a Series from entries in the `points` column, but convert the entries to strings. Hint: strings are `str`...
+
+Code Snippet:
+import pandas as pd
+
+reviews = pd.read_csv(""../input/wine-reviews/winemag-data-130k-v2.csv"", index_col=0)
+
+from learntools.core import binder; binder.bind(globals())
+from learntools.pandas.data_types_and_missing_data import *
+print(""Setup complete."") # Your code here
+dtype = ____
+
+# Check your answe"
+exercise-data-types,"**This notebook is an exercise in the [Intro to Programming](https://www.kaggle.com/learn/intro-to-programming) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/data-types).**
+
+---
+ In the tutorial, you learned about four different data types: floats, integers, strings, and booleans.  In this exercise, you'll experiment with them.
+
+# Set up the notebook
+
+Run the next code cell without changes to set up the notebook. # Question 1
+
+You have seen how to conv...
+
+Code Snippet:
+# Set up the exercise
+from learntools.core import binder
+binder.bind(globals())
+from learntools.intro_to_programming.ex3 import *
+print('Setup complete.') # Define a float
+y = 1.
+print(y)
+print(type(y))
+
+# Convert float to integer with the int function
+z = int(y)
+print(z)
+print(type(z)) # Uncomment "
+exercise-deep-neural-networks,"**This notebook is an exercise in the [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/ryanholbrook/deep-neural-networks).**
+
+---
+ # Introduction #
+
+In the tutorial, we saw how to build deep neural networks by stacking layers inside a `Sequential` model. By adding an *activation function* after the hidden layers, we gave the network the ability to learn more complex (non-linear) relationshi...
+
+Code Snippet:
+import tensorflow as tf
+
+# Setup plotting
+import matplotlib.pyplot as plt
+
+plt.style.use('seaborn-whitegrid')
+# Set Matplotlib defaults
+plt.rc('figure', autolayout=True)
+plt.rc('axes', labelweight='bold', labelsize='large',
+       titleweight='bold', titlesize=18, titlepad=10)
+
+# Setup feedback syst"
+exercise-distributions,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/distributions).**
+
+---
+ In this exercise, you will use your new knowledge to propose a solution to a real-world scenario.  To succeed, you will need to import data into Python, answer questions using the data, and generate **histograms** and **density plots** to understand patterns in the data.
+
+## Sc...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+print(""Setup Complete"") # Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.data_viz_to_coder.ex5 import *
+print(""Set"
+exercise-explore-your-data,"**[Machine Learning Course Home Page](https://www.kaggle.com/learn/machine-learning)**
+
+---
+ This exercise will test your ability to read a data file and understand statistics about the data.
+
+In later exercises, you will apply techniques to filter the data, build a machine learning model, and iteratively improve your model.
+
+The course examples use data from Melbourne. To ensure you can apply these techniques on your own, you will have to apply them to a new dataset (with house prices from Iowa...
+
+Code Snippet:
+# Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.machine_learning.ex2 import *
+print(""Setup Complete"") import pandas as pd
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+
+# Fill in the line below to read the f"
+exercise-final-project,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/final-project).**
+
+---
+ Now it's time for you to demonstrate your new skills with a project of your own!
+
+In this exercise, you will work with a dataset of your choosing.  Once you've selected a dataset, you'll design and create your own plot to tell interesting stories behind the data!
+
+## Setup
+
+Run...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+print(""Setup Complete"") # Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.data_viz_to_coder.ex7 import *
+print(""Set"
+exercise-functions-and-getting-help,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/functions-and-getting-help).**
+
+---
+ Functions are powerful. Try writing some yourself.
+
+As before, don't forget to run the setup code below before jumping into question 1. # 1.
+
+Complete the body of the following function according to its docstring.
+
+HINT: Python has a built-in function `round`. # 2.
+The help for `round` sa...
+
+Code Snippet:
+# SETUP. You don't need to worry for now about what this code does or how it works.
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex2 import *
+print('Setup complete.') def round_to_two_places(num):
+    """"""Return the given number rounded to two decimal places. 
+   "
+exercise-functions,"**This notebook is an exercise in the [Intro to Programming](https://www.kaggle.com/learn/intro-to-programming) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/functions).**
+
+---
+ In the tutorial, you learned about functions. In this exercise, you'll write some of your own!
+
+# Set up the notebook
+
+Run the next code cell without changes to set up the notebook. # Question 1
+
+In the [House Prices - Advanced Regression Techniques competition](https://www.kag...
+
+Code Snippet:
+# Set up the exercise
+import math
+from learntools.core import binder
+binder.bind(globals())
+from learntools.intro_to_programming.ex2 import *
+print('Setup complete.') # TODO: Complete the function
+def get_expected_cost(beds, baths):
+    value = ____
+    return value
+
+# Check your answer 
+q1.check() "
+exercise-getting-started-with-sql-and-bigquery,"**This notebook is an exercise in the [SQL](https://www.kaggle.com/learn/intro-to-sql) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/getting-started-with-sql-and-bigquery).**
+
+---
+ # Introduction
+
+The first test of your new data exploration skills uses data describing crime in the city of Chicago.
+
+Before you get started, run the following cell. It sets up the automated feedback system to review your answers. Use the next code cell to fetch the dataset....
+
+Code Snippet:
+# Set up feedack system
+from learntools.core import binder
+binder.bind(globals())
+from learntools.sql.ex1 import *
+print(""Setup Complete"") from google.cloud import bigquery
+
+# Create a ""Client"" object
+client = bigquery.Client()
+
+# Construct a reference to the ""chicago_crime"" dataset
+dataset_ref = cl"
+exercise-group-by-having-count,"**This notebook is an exercise in the [SQL](https://www.kaggle.com/learn/intro-to-sql) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/group-by-having-count).**
+
+---
+ # Introduction
+
+Queries with **GROUP BY** can be powerful. There are many small things that can trip you up (like the order of the clauses), but it will start to feel natural once you've done it a few times. Here, you'll write queries using **GROUP BY** to answer questions from the Hacker Ne...
+
+Code Snippet:
+# Set up feedback system
+from learntools.core import binder
+binder.bind(globals())
+from learntools.sql.ex3 import *
+print(""Setup Complete"") from google.cloud import bigquery
+
+# Create a ""Client"" object
+client = bigquery.Client()
+
+# Construct a reference to the ""hacker_news"" dataset
+dataset_ref = cli"
+exercise-grouping-and-sorting,"**This notebook is an exercise in the [Pandas](https://www.kaggle.com/learn/pandas) course.  You can reference the tutorial at [this link](https://www.kaggle.com/residentmario/grouping-and-sorting).**
+
+---
+ # Introduction
+
+In these exercises we'll apply groupwise analysis to our dataset.
+
+Run the code cell below to load the data before running the exercises. # Exercises ## 1.
+Who are the most common wine reviewers in the dataset? Create a `Series` whose index is the `taster_twitter_handle` categ...
+
+Code Snippet:
+import pandas as pd
+
+reviews = pd.read_csv(""../input/wine-reviews/winemag-data-130k-v2.csv"", index_col=0)
+#pd.set_option(""display.max_rows"", 5)
+
+from learntools.core import binder; binder.bind(globals())
+from learntools.pandas.grouping_and_sorting import *
+print(""Setup complete."") # Your code here
+r"
+exercise-handling-missing-values,"**This notebook is an exercise in the [Data Cleaning](https://www.kaggle.com/learn/data-cleaning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/handling-missing-values).**
+
+---
+ In this exercise, you'll apply what you learned in the **Handling missing values** tutorial.
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. # 1) Take a first look at the data
+
+Run the next code cell to lo...
+
+Code Snippet:
+from learntools.core import binder
+binder.bind(globals())
+from learntools.data_cleaning.ex1 import *
+print(""Setup Complete"") # modules we'll use
+import pandas as pd
+import numpy as np
+
+# read in all our data
+sf_permits = pd.read_csv(""../input/building-permit-applications-data/Building_Permits.csv"")
+"
+exercise-hello-seaborn,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/hello-seaborn).**
+
+---
+ In this exercise, you will write your first lines of code and learn how to use the coding environment for the course!
+
+## Setup
+
+First, you'll learn how to run code, and we'll start with the code cell below.  (Remember that a **code cell** in a notebook is just a gray box conta...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+
+# Set up code checking
+import os
+if not os.path.exists(""../input/fifa.csv""):
+    os.symlink(""../input/data-for-datavis/fifa.csv"", ""../input/fifa.csv"")  
+from lea"
+exercise-indexing-selecting-assigning,"**This notebook is an exercise in the [Pandas](https://www.kaggle.com/learn/pandas) course.  You can reference the tutorial at [this link](https://www.kaggle.com/residentmario/indexing-selecting-assigning).**
+
+---
+ # Introduction
+
+In this set of exercises we will work with the [Wine Reviews dataset](https://www.kaggle.com/zynicide/wine-reviews).  Run the following cell to load your data and some utility functions (including code to check your answers). Look at an overview of your data by running...
+
+Code Snippet:
+import pandas as pd
+
+reviews = pd.read_csv(""../input/wine-reviews/winemag-data-130k-v2.csv"", index_col=0)
+pd.set_option(""display.max_rows"", 5)
+
+from learntools.core import binder; binder.bind(globals())
+from learntools.pandas.indexing_selecting_and_assigning import *
+print(""Setup complete."") reviews"
+exercise-intro-to-lists,"**This notebook is an exercise in the [Intro to Programming](https://www.kaggle.com/learn/intro-to-programming) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/intro-to-lists).**
+
+---
+ In the tutorial, you learned how to define and modify Python lists.  In this exercise, you will use your new knowledge to solve several problems.
+
+# Set up the notebook
+
+Run the next code cell without changes to set up the notebook. # Question 1
+
+You own a restaurant with ...
+
+Code Snippet:
+from learntools.core import binder
+binder.bind(globals())
+from learntools.intro_to_programming.ex5 import *
+print('Setup complete.') # Do not change: Initial menu for your restaurant
+menu = ['stewed meat with onions', 'bean soup', 'risotto with trout and shrimp',
+       'fish soup with cream and oni"
+exercise-introduction,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/introduction).**
+
+---
+ As a warm-up, you'll review some machine learning fundamentals and submit your initial results to a Kaggle competition.
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. You will work wi...
+
+Code Snippet:
+# Set up code checking
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlink(""../input/home-data-for-ml-course/test.csv"", ""../input/test.csv"")  
+from learntools.core import binder
+binder.bind(globals"
+exercise-line-charts,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/line-charts).**
+
+---
+ In this exercise, you will use your new knowledge to propose a solution to a real-world scenario. To succeed, you will need to import data into Python, answer questions using the data, and generate **line charts** to understand patterns in the data.
+
+## Scenario
+
+You have recentl...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+print(""Setup Complete"") # Set up code checking
+import os
+if not os.path.exists(""../input/museum_visitors.csv""):
+    os.symlink(""../input/data-for-datavis/museum_v"
+exercise-lists,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/lists).**
+
+---
+ Things get more interesting with lists. You'll apply your new knowledge to solve the questions below. Remember to run the following cell first. # 1.
+
+Complete the function below according to its docstring. # 2.
+
+You are analyzing sports teams.  Members of each team are stored in a list. The Coach is the first...
+
+Code Snippet:
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex4 import *
+print('Setup complete.') def select_second(L):
+    """"""Return the second element of the given list. If the list has no second
+    element, return None.
+    """"""
+    pass
+
+# Check your answer
+q1.check() #q1.h"
+exercise-loops-and-list-comprehensions,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/loops-and-list-comprehensions).**
+
+---
+ With all you've learned, you can start writing much more interesting programs. See if you can solve the problems below.
+
+As always, run the setup code below before working on the questions. # 1.
+
+Have you ever felt debugging involved a bit of luck? The following program has a bug. Try ...
+
+Code Snippet:
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex5 import *
+print('Setup complete.') def has_lucky_number(nums):
+    """"""Return whether the given list of numbers is lucky. A lucky list contains
+    at least one number divisible by 7.
+    """"""
+    for num in nums:
+   "
+exercise-machine-learning-competitions,"**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/machine-learning-competitions).**
+
+---
+ # Introduction
+
+In this exercise, you will create and submit predictions for a Kaggle competition. You can then improve your model (e.g. by adding features) to apply what you've learned and move up the leaderboard.
+
+Begin by running the code...
+
+Code Snippet:
+# Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.machine_learning.ex7 import *
+
+# Set up filepaths
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlin"
+exercise-missing-values,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/missing-values).**
+
+---
+ Now it's your turn to test your new knowledge of **missing values** handling. You'll probably find it makes a big difference.
+
+# Setup
+
+The questions will give you feedback on your work. Run the following cell to set up the feedback system. In this exerci...
+
+Code Snippet:
+# Set up code checking
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlink(""../input/home-data-for-ml-course/test.csv"", ""../input/test.csv"") 
+from learntools.core import binder
+binder.bind(globals("
+exercise-model-validation,"**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/model-validation).**
+
+---
+ ## Recap
+You've built a model. In this exercise you will test how good your model is.
+
+Run the cell below to set up your coding environment where the previous exercise left off. # Exercises
+
+## Step 1: Split Your Data
+Use the `train_test_split` function t...
+
+Code Snippet:
+# Code you have previously used to load data
+import pandas as pd
+from sklearn.tree import DecisionTreeRegressor
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+
+home_data = pd.read_csv(iowa_file_path)
+y = home_data.SalePrice
+feature_columns = ['LotArea', 'Ye"
+exercise-overfitting-and-underfitting,"**This notebook is an exercise in the [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/ryanholbrook/overfitting-and-underfitting).**
+
+---
+ # Introduction #
+
+In this exercise, you’ll learn how to improve training outcomes by including an early stopping callback to prevent overfitting.
+
+When you're ready, run this next cell to set everything up! First load the *Spotify* dataset. Your task wil...
+
+Code Snippet:
+# Setup plotting
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-whitegrid')
+# Set Matplotlib defaults
+plt.rc('figure', autolayout=True)
+plt.rc('axes', labelweight='bold', labelsize='large',
+       titleweight='bold', titlesize=18, titlepad=10)
+plt.rc('animation', html='html5')
+
+# Setup feedb"
+exercise-pipelines,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/pipelines).**
+
+---
+ In this exercise, you will use **pipelines** to improve the efficiency of your machine learning code.
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. You will work with data from the [Hou...
+
+Code Snippet:
+# Set up code checking
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlink(""../input/home-data-for-ml-course/test.csv"", ""../input/test.csv"") 
+from learntools.core import binder
+binder.bind(globals("
+exercise-random-forests,"**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/random-forests).**
+
+---
+ ## Recap
+Here's the code you've written so far. # Exercises
+Data science isn't always this easy. But replacing the decision tree with a Random Forest is going to be an easy win. ## Step 1: Use a Random Forest So far, you have followed specific instructions ...
+
+Code Snippet:
+# Code you have previously used to load data
+import pandas as pd
+from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.c"
+exercise-renaming-and-combining,"**This notebook is an exercise in the [Pandas](https://www.kaggle.com/learn/pandas) course.  You can reference the tutorial at [this link](https://www.kaggle.com/residentmario/renaming-and-combining).**
+
+---
+ # Introduction
+
+Run the following cell to load your data and some utility functions. # Exercises
+
+View the first several lines of your data by running the cell below: ## 1.
+`region_1` and `region_2` are pretty uninformative names for locale columns in the dataset. Create a copy of `reviews`...
+
+Code Snippet:
+import pandas as pd
+
+reviews = pd.read_csv(""../input/wine-reviews/winemag-data-130k-v2.csv"", index_col=0)
+
+from learntools.core import binder; binder.bind(globals())
+from learntools.pandas.renaming_and_combining import *
+print(""Setup complete."") reviews.head() # Your code here
+renamed = ____
+
+# Chec"
+exercise-scaling-and-normalization,"**This notebook is an exercise in the [Data Cleaning](https://www.kaggle.com/learn/data-cleaning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/scaling-and-normalization).**
+
+---
+ In this exercise, you'll apply what you learned in the **Scaling and normalization** tutorial.
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. # Get our environment set up
+
+To practice scaling and normal...
+
+Code Snippet:
+from learntools.core import binder
+binder.bind(globals())
+from learntools.data_cleaning.ex2 import *
+print(""Setup Complete"") # modules we'll use
+import pandas as pd
+import numpy as np
+
+# for Box-Cox Transformation
+from scipy import stats
+
+# for min_max scaling
+from mlxtend.preprocessing import minma"
+exercise-scatter-plots,"**This notebook is an exercise in the [Data Visualization](https://www.kaggle.com/learn/data-visualization) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/scatter-plots).**
+
+---
+ In this exercise, you will use your new knowledge to propose a solution to a real-world scenario.  To succeed, you will need to import data into Python, answer questions using the data, and generate **scatter plots** to understand patterns in the data.
+
+## Scenario
+
+You work fo...
+
+Code Snippet:
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+print(""Setup Complete"") # Set up code checking
+import os
+if not os.path.exists(""../input/candy.csv""):
+    os.symlink(""../input/data-for-datavis/candy.csv"", ""../in"
+exercise-select-from-where,"**This notebook is an exercise in the [SQL](https://www.kaggle.com/learn/intro-to-sql) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/select-from-where).**
+
+---
+ # Introduction
+
+Try writing some **SELECT** statements of your own to explore a large dataset of air pollution measurements.
+
+Run the cell below to set up the feedback system. The code cell below fetches the `global_air_quality` table from the `openaq` dataset.  We also preview the first five ro...
+
+Code Snippet:
+# Set up feedback system
+from learntools.core import binder
+binder.bind(globals())
+from learntools.sql.ex2 import *
+print(""Setup Complete"") from google.cloud import bigquery
+
+# Create a ""Client"" object
+client = bigquery.Client()
+
+# Construct a reference to the ""openaq"" dataset
+dataset_ref = client.d"
+exercise-stochastic-gradient-descent,"**This notebook is an exercise in the [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/ryanholbrook/stochastic-gradient-descent).**
+
+---
+ # Introduction #
+
+In this exercise you'll train a neural network on the *Fuel Economy* dataset and then explore the effect of the learning rate and batch size on SGD.
+
+When you're ready, run this next cell to set everything up! In the *Fuel Economy* datas...
+
+Code Snippet:
+# Setup plotting
+import matplotlib.pyplot as plt
+from learntools.deep_learning_intro.dltools import animate_sgd
+plt.style.use('seaborn-whitegrid')
+# Set Matplotlib defaults
+plt.rc('figure', autolayout=True)
+plt.rc('axes', labelweight='bold', labelsize='large',
+       titleweight='bold', titlesize=18"
+exercise-strings-and-dictionaries,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/strings-and-dictionaries).**
+
+---
+ You are almost done with the course. Nice job!
+
+We have a couple more interesting problems for you before you go. 
+
+As always, run the setup code below before working on the questions. Let's start with a string lightning round to warm up. What are the lengths of the strings below?
+
+For each...
+
+Code Snippet:
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex6 import *
+print('Setup complete.') a = """"
+length = ____
+q0.a.check() b = ""it's ok""
+length = ____
+q0.b.check() c = 'it\'s ok'
+length = ____
+q0.c.check() d = """"""hey""""""
+length = ____
+q0.d.check() e = '\n'
+length = ____"
+exercise-summary-functions-and-maps,"**This notebook is an exercise in the [Pandas](https://www.kaggle.com/learn/pandas) course.  You can reference the tutorial at [this link](https://www.kaggle.com/residentmario/summary-functions-and-maps).**
+
+---
+ # Introduction
+
+Now you are ready to get a deeper understanding of your data.
+
+Run the following cell to load your data and some utility functions (including code to check your answers). # Exercises ## 1.
+
+What is the median of the `points` column in the `reviews` DataFrame? ## 2. 
+What...
+
+Code Snippet:
+import pandas as pd
+pd.set_option(""display.max_rows"", 5)
+reviews = pd.read_csv(""../input/wine-reviews/winemag-data-130k-v2.csv"", index_col=0)
+
+from learntools.core import binder; binder.bind(globals())
+from learntools.pandas.summary_functions_and_maps import *
+print(""Setup complete."")
+
+reviews.head("
+exercise-syntax-variables-and-numbers,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/hello-python).**
+
+---
+ Welcome to your first set of Python coding problems.  If this is your first time using Kaggle Notebooks, welcome! 
+
+Notebooks are composed of blocks (called ""cells"") of text and code. Each of these is editable, though you'll mainly be editing the code cells to answer some questions.
+
+To get started, tr...
+
+Code Snippet:
+print(""You've successfully run some Python code"")
+print(""Congratulations!"") from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex1 import *
+print(""Setup complete! You're ready to start question 0."") # create a variable called color with an appropriate value on the line"
+exercise-underfitting-and-overfitting,"**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/underfitting-and-overfitting).**
+
+---
+ ## Recap
+You've built your first model, and now it's time to optimize the size of the tree to make better predictions. Run this cell to set up your coding environment where the previous step left off. # Exercises
+You could write the function `...
+
+Code Snippet:
+# Code you have previously used to load data
+import pandas as pd
+from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.c"
+exercise-working-with-external-libraries,"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/working-with-external-libraries).**
+
+---
+ # Try It Yourself
+
+There are only three problems in this last set of exercises, but they're all pretty tricky, so be on guard! 
+
+Run the setup code below before working on the questions. # 1.
+
+After completing the exercises on lists and tuples, Jimmy noticed that, according to his `e...
+
+Code Snippet:
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex7 import *
+print('Setup complete.') # Import the jimmy_slots submodule
+from learntools.python import jimmy_slots
+# Call the get_graph() function to get Jimmy's graph
+graph = jimmy_slots.get_graph()
+graph def prettify"
+exercise-xgboost,"**This notebook is an exercise in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/xgboost).**
+
+---
+ In this exercise, you will use your new knowledge to train a model with **gradient boosting**.
+
+# Setup
+
+The questions below will give you feedback on your work. Run the following cell to set up the feedback system. You will work with the [Housing Prices Competi...
+
+Code Snippet:
+# Set up code checking
+import os
+if not os.path.exists(""../input/train.csv""):
+    os.symlink(""../input/home-data-for-ml-course/train.csv"", ""../input/train.csv"")  
+    os.symlink(""../input/home-data-for-ml-course/test.csv"", ""../input/test.csv"") 
+from learntools.core import binder
+binder.bind(globals("
+exercise-your-first-machine-learning-model,"**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/your-first-machine-learning-model).**
+
+---
+ ## Recap
+So far, you have loaded your data and reviewed it with the following code. Run this cell to set up your coding environment where the previous step left off. # Exercises
+
+## Step 1: Specify Prediction Target
+Select the target vari...
+
+Code Snippet:
+# Code you have previously used to load data
+import pandas as pd
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+
+home_data = pd.read_csv(iowa_file_path)
+
+# Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.machin"
+titanic-data-science-solutions,"# Titanic Data Science Solutions
+
+
+### This notebook is a companion to the book [Data Science Solutions](https://www.amazon.com/Data-Science-Solutions-Startup-Workflow/dp/1520545312). 
+
+The notebook walks us through a typical workflow for solving data science competitions at sites like Kaggle.
+
+There are several excellent notebooks to study data science competition entries. However many will skip some of the explanation on how the solution is developed as these notebooks are developed by experts...
+
+Code Snippet:
+# data analysis and wrangling
+import pandas as pd
+import numpy as np
+import random as rnd
+
+# visualization
+import seaborn as sns
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+# machine learning
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC, LinearSVC
+from skle"
